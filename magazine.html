@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novospecados Magazine</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Inter", sans-serif;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        /* --- Estrutura e Conteúdo --- */
+        .container {
+            /* Limita a largura do conteúdo para melhor leitura */
+            max-width: 900px; 
+            margin: 2rem auto; /* Centraliza o container */
+            padding: 0 1rem;
+        }
+
+        .magazine-image {
+            width: 100%; /* Faz a imagem ocupar 100% do container */
+            height: auto; /* Mantém a proporção */
+            margin-bottom: 2rem;
+            /* Placeholder visual (opcional) */
+            background-color: #333;
+            min-height: 300px; 
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            /* O texto da magazine não precisa ser uppercase */
+            text-transform: none; 
+        }
+
+        /* --- Navegação (Voltar) --- */
+        .nav-voltar {
+            display: inline-block;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-voltar:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* --- Responsividade --- */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .container {
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="nav-voltar">[VOLTAR]</a>
+    </header>
+
+    <main class="container">
+        
+        <img src="httpsa://via.placeholder.com/900x500/333333/FFFFFF?text=COLOQUE+SUA+IMAGEM+AQUI" 
+             alt="Descrição da imagem" 
+             class="magazine-image">
+
+        <h1>Título do Artigo ou Conceito</h1>
+
+        <p>
+            Este é o espaço para explicar seu trabalho. Fale sobre o conceito por trás do drop, o processo criativo, os materiais utilizados ou a história que você quer contar com suas peças.
+        </p>
+        <p>
+            Você pode adicionar mais parágrafos simplesmente copiando a tag &lt;p&gt; e colando abaixo, quantas vezes precisar.
+        </p>
+
+    </main>
+
+</body>
+</html>

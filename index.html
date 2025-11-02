@@ -1,23 +1,65 @@
 <html>
-    <head>
-        <title>novospecados</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<style>
-            body {
-                background-color: black;
-                color: white;
-                font-family: "inter";
-                text-transform: uppercase;
+<head>
+    <title>novospecados</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            /* Corrigi o nome da fonte (case sensitive) */
+            font-family: "Inter", sans-serif; 
+            text-transform: uppercase;
+            margin: 0; /* Remove margens padrão */
+            padding: 1rem; /* Adiciona espaço nas laterais */
+            
+            /* 2. QUEBRA DE LINHA: Impede o texto longo de vazar */
+            overflow-wrap: break-word;
+        }
+
+        a {
+            color: inherit; /* Faz o link ter a mesma cor do body */
+            text-decoration: none; /* Remove sublinhado */
+            line-height: 1.2; /* Melhora a leitura do bloco de texto */
+        }
+
+        h2 {
+            /* 4. ESPAÇAMENTO: Substitui os <br> */
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem; /* Tamanho padrão para desktop */
+        }
+
+        .texto-centralizado {
+            text-align: center;
+        }
+
+        .texto-direita {
+            text-align: right;
+        }
+
+        /* 3. MEDIA QUERY: Regras para telas menores (ex: celulares) */
+        @media (max-width: 600px) {
+            h2 {
+                /* Diminui a fonte em telas pequenas */
+                font-size: 1.8rem; 
+                margin-top: 3rem;
             }
-        </style>
-    </head>
-    <body>
-        <a>ULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinnerULTRAalmostGrammyWinner</a>
-        <br> <br> <br> <br>
-        <h2 style="text-align: center;">novospecados</h2>
-        <br> <br>
-        <h2 style="text-align: right;">no próximo drop e album.</h2>
-    </body>
+        }
+    </style>
+</head>
+<body>
+
+    <a>FROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRAFROMTHESAMECREATOROFULTRA</a>
+    
+    <h2 class="texto-centralizado">novospecados</h2>
+
+    <h2 class="texto-direita">próximo drop e album. 2026.</h2>
+
+</body>
 </html>

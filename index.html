@@ -12,27 +12,23 @@
         body {
             background-color: black;
             color: white;
-            /* Corrigi o nome da fonte (case sensitive) */
             font-family: "Inter", sans-serif; 
             text-transform: uppercase;
-            margin: 0; /* Remove margens padrão */
-            padding: 1rem; /* Adiciona espaço nas laterais */
-            
-            /* 2. QUEBRA DE LINHA: Impede o texto longo de vazar */
+            margin: 0; 
+            padding: 1rem; 
             overflow-wrap: break-word;
         }
 
         a {
-            color: inherit; /* Faz o link ter a mesma cor do body */
-            text-decoration: none; /* Remove sublinhado */
-            line-height: 1.2; /* Melhora a leitura do bloco de texto */
+            color: inherit; 
+            text-decoration: none; 
+            line-height: 1.2; 
         }
 
         h2 {
-            /* 4. ESPAÇAMENTO: Substitui os <br> */
             margin-top: 4rem;
             margin-bottom: 2rem;
-            font-size: 2.5rem; /* Tamanho padrão para desktop */
+            font-size: 2.5rem; 
         }
 
         .texto-centralizado {
@@ -43,12 +39,34 @@
             text-align: right;
         }
 
-        /* 3. MEDIA QUERY: Regras para telas menores (ex: celulares) */
+        /* --- NOVO CSS PARA O BOTÃO --- */
+        .magazine-button {
+            display: block; /* Faz o link ocupar a linha e permitir centralização */
+            width: fit-content; /* Largura se ajusta ao conteúdo */
+            margin: 4rem auto; /* 4rem em cima/baixo, auto centraliza dos lados */
+            padding: 12px 20px; /* Espaçamento interno */
+            border: 1px solid white; /* Borda branca */
+            text-align: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease; /* Transição suave para o hover */
+        }
+
+        .magazine-button:hover {
+            background-color: white;
+            color: black;
+        }
+        /* --- FIM DO NOVO CSS --- */
+
+
         @media (max-width: 600px) {
             h2 {
-                /* Diminui a fonte em telas pequenas */
                 font-size: 1.8rem; 
                 margin-top: 3rem;
+            }
+
+            .magazine-button {
+                font-size: 1rem; /* Fonte menor no celular */
+                padding: 10px 16px;
             }
         }
     </style>
@@ -60,6 +78,8 @@
     <h2 class="texto-centralizado">novospecados</h2>
 
     <h2 class="texto-direita">novo drop e album <br> 2026</h2>
+
+    <a href="#" class="magazine-button">[novospecados magazine]</a>
 
 </body>
 </html>
